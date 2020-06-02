@@ -1,4 +1,0 @@
-
-include:
-  - remote: 'https://gitlab.com/gitlab-org/auto-devops-v12-10/-/raw/master/Auto-DevOps-remote.gitlab-ci.yml'
-
