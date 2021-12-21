@@ -1,3 +1,3 @@
-FROM node:alpine
-USER node
-CMD node --input-type=module -e "import http from 'http'; http.createServer((req, res) => res.end('hai')).listen(5000)"
+FROM denoland/deno:alpine
+USER deno
+CMD deno eval 'import { serve } from "https://deno.land/std/http/server.ts"; serve(() => new Response("hai"), { port: 5000 });'
